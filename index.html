@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="https://github.com/Cool-8298/Image/blob/main/logo.png?raw=true" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <p>Password Generator</p>
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" id="password" disabled>
+                <span id="copy" onclick="copyPassword()">copy</span>
+            </div>
+            <div class="pass-settings">
+                <label for="" class="title">Password Settings</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" name="lowercase" id="lowercase" checked>
+                        <label for="lowercase">Lowercase (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="uppercase" id="uppercase">
+                        <label for="uppercase">Uppercase (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="numbers" id="numbers">
+                        <label for="numbers">Numbers (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="symbols" id="symbols">
+                        <label for="symbols">Symbols (!@#$%^&*)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="" id="exc-duplication">
+                        <label for="exc-duplication">Exclude Duplicated</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="" id="spaces">
+                        <label for="spaces">Include Spaces</label>
+                    </li>
+                </ul>
+            </div>
+            <button onclick="generatePassword()" class="generate-btn" id="generate">Generate Password</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
